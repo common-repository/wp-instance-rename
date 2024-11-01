@@ -1,0 +1,135 @@
+body{
+font-family:Arial, Helvetica, sans-serif; 
+font-size:13px;
+}
+.info, .success, .warning, .error, .validation {
+border: 1px solid;
+margin: 10px 10px 10px 0;
+padding:2px 2px 2px 2px;
+background-repeat: no-repeat;
+background-position: 10px center;
+}
+.info {
+color: #00529B;
+background-color: #BDE5F8;
+background-image: url('../images/info.png');
+}
+.success {
+color: #4F8A10;
+background-color: #DFF2BF;
+background-image:url('../images/success.png');
+}
+.warning {
+color: #9F6000;
+background-color: #FEEFB3;
+background-image: url('../images/warning.png');
+}
+.error {
+color: #D8000C;
+background-color: #FFBABA;
+background-image: url('../images/error.png');
+}
+.error p ,.success p, .warning p,.validation p, .info p{
+	padding: 2px 2px 2px 50px !important;
+}
+.divMsg{
+	position: absolute;
+    top: 30%;
+    z-index: 1001;
+	height: 50%;
+	left: 20%;
+}
+.divMsg img{
+	height: 50%;
+}
+.message_checkbox{
+	color:red;
+}
+form#renaming_form ol li{
+	list-style:none !important;
+	border-color: #ECECEC;
+	border-style: solid;
+	border-width: 2px;
+	background: rgba(255,255,255,.3);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+form#renaming_form ol{
+	margin-left:1em;
+	width: 400px;
+}
+form#renaming_form label {
+float: left;
+font-size: 13px;
+width: 210px;
+color:#21759B;
+}
+legend{
+	font-weight:bold;
+}
+input[type=checkbox] {  
+    float: left;
+	margin-top: 2px;
+}
+.checkbox_wrapper label{
+	margin-left:20px;
+	width:240px !important;
+}
+
+form#renaming_form{
+	clear:both;
+}
+#message > form{
+	float:left !important;
+}
+.download_link > img {
+    width: 50px !important;
+}
+
+a.download_link {
+  position: relative;
+  text-decoration: none;
+}
+a.download_link span {display: none;}
+a.download_link:hover span {
+  display: block;
+  position: absolute; 
+  padding: .5em;
+  content: attr(title);
+  min-width: 120px;
+  text-align: center;
+  width: auto;
+  height: auto;
+  white-space: nowrap;
+  top: -30px;
+  background: #DFF2BF;
+  -moz-border-radius:10px;
+  -webkit-border-radius:10px;
+  border-radius:10px;    
+  color: #4F8A10;
+  font-size: .86em;
+  font-weight: bold;
+  left: 70px !important;
+}
+a.download_link:hover span:after {
+  position: absolute;
+  display: block;
+  content: "";  
+  border-color: #DFF2BF transparent transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  height:0;
+  width:0;
+  position:absolute;
+  /*bottom: -20px;
+  left:1em;*/
+  top: 15px;
+  left: -20px;
+}
+
+
+
+
+
